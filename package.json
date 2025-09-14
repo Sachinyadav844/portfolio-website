@@ -1,0 +1,40 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "A full-stack portfolio website with React frontend and Node.js backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd my-portfolio && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd my-portfolio && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd my-portfolio && npm install && cd ../backend && npm install",
+    "clean": "rm -rf node_modules my-portfolio/node_modules backend/node_modules",
+    "preview": "cd my-portfolio && npm run preview"
+  },
+  "workspaces": [
+    "my-portfolio",
+    "backend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "typescript",
+    "nodejs",
+    "express",
+    "vite",
+    "tailwindcss"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

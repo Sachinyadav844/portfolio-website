@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		scroll-behavior: smooth;
+	}
+	html, body, #root { height: 100%; }
+}
+
+@layer components {
+	.container-px { @apply px-4 sm:px-6 lg:px-8; }
+	.section { @apply container-px max-w-7xl mx-auto py-16 sm:py-20; }
+	.card { @apply rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-800/70 backdrop-blur shadow-lg; }
+	.btn-primary { @apply inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 font-medium text-white hover:bg-brand-dark transition; }
+	.btn-ghost { @apply inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-600 px-5 py-2.5 hover:bg-slate-100 dark:hover:bg-slate-700 transition; }
+}
+
+/* Soft radial mask to visually reduce busy photo backgrounds */
+.mask-soft {
+	-webkit-mask-image: radial-gradient(circle at 50% 50%, black 62%, transparent 78%);
+	mask-image: radial-gradient(circle at 50% 50%, black 62%, transparent 78%);
+}
+
+/* Elliptical portrait mask that keeps full height and softly fades background */
+.mask-portrait {
+	-webkit-mask-image: radial-gradient(ellipse at 50% 42%, black 70%, rgba(0,0,0,0.85) 78%, transparent 92%);
+	mask-image: radial-gradient(ellipse at 50% 42%, black 70%, rgba(0,0,0,0.85) 78%, transparent 92%);
+}
