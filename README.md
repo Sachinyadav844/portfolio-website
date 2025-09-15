@@ -22,15 +22,13 @@ Contact
 
 Email: sachinyadavv4534@gmail.com
 
-LinkedIn: 
+LinkedIn: https://www.linkedin.com/in/sachin-yadav-a5a3122a6
 
-GitHub: 
+GitHub: https://github.com/Sachinyadav844
 
 License & Copyright
 
 © 2025 sachin yadav
 This project is licensed under the MIT License. You may use and modify it with proper attribution.
 
-👉 Do you want me to also make this in a resume-style summary (2–3 lines) that you can put directly on GitHub as the description of your repo?
 
-ChatGPT can make mistakes. Check importa
